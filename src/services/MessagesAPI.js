@@ -21,6 +21,7 @@ class MessagesAPI {
     });
     chatPromise
       .then(response => {
+        // console.log(response.data)
         THIS.setState({ chatData: response["data"] })
       })
   };

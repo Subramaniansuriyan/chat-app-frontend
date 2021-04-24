@@ -23,7 +23,6 @@ class Messages extends React.Component {
   render() {
     return (
       <div className="Messages">
-
         {
           this.state.chatData ?
             this.state.chatData.map((chat) => {

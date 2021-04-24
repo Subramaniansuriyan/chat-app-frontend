@@ -35,7 +35,7 @@ class FriendsSearchOption extends React.Component {
           <div className="search-option-username">
 
             {
-              this.props.username.length ?
+              this.props.username?.length ?
                 <div className="search-option-username-span-wrapper">
                   <strong className="search-option-username-span">
                     {this.props.username}

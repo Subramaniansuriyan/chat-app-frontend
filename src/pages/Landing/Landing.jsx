@@ -34,10 +34,10 @@ class Landing extends React.Component {
 
                     <div className="Landing">
                         <div className="main-navbar">
-                            <div className="navbaritems"><a href="#scroll-why"><p>Why iChat?</p></a></div>
-                            <div className="navbaritems"><p>Set Up</p></div>
+                            <div className="navbaritems"><a href="#scroll-why"><p>Let's Chat</p></a></div>
+                            {/* <div className="navbaritems"><p>Set Up</p></div>
                             <div className="navbaritems"><p>Pricing</p></div>
-                            <div className="navbaritems"><p>Contact Us</p></div>
+                            <div className="navbaritems"><p>Contact Us</p></div> */}
                         </div>
 
                         <div className="Landing-background-pic">
@@ -46,13 +46,13 @@ class Landing extends React.Component {
                         </div>
 
                         <div className="main-navbar2 main-navbar">
-                            <div className="navbaritems"><p>Why iChat?</p></div>
-                            <div className="navbaritems"><p>Set Up</p></div>
+                            <div className="navbaritems"><p>Let's Chat</p></div>
+                            {/* <div className="navbaritems"><p>Set Up</p></div>
                             <div className="navbaritems"><p>Pricing</p></div>
-                            <div className="navbaritems"><p>Contact Us</p></div>
+                            <div className="navbaritems"><p>Contact Us</p></div> */}
                         </div>
 
-                        <div className="landing-bottom">
+                        {/* <div className="landing-bottom">
                             <div id="scroll-why"> </div>
                             <div className="why-section-wrapper">
                                 <Container>
@@ -179,7 +179,7 @@ class Landing extends React.Component {
                                     </Row>
                                 </Container>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </React.Fragment>
             </Switch>

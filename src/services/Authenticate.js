@@ -130,6 +130,31 @@ class Authenticate {
         }
       )
   }
+  // static allusers(ownid,THIS) {
+
+  //   let userPromise = new Promise((resolve, reject) => {
+  //     axios
+  //       .get(`http://localhost:5000/auth/${ownid}`)
+  //       .then(response => {
+  //         resolve(response.data.user[0])
+  //       })
+  //       // .catch(error => {
+  //       //   THIS.props.history.push("/")
+  //       // })
+  //   });
+  //   userPromise
+  //     .then(response => {
+  //       // let userdata = response
+  //       // console.log(userdata)
+  //       THIS.setState({data: response});
+  //     })
+  // };
+  // static async find_users(ownid) {
+  //   console.log('front',ownid)
+  //   let user_data = await axios
+  //     .get(`http://localhost:5000/auth/${ownid}`)
+  //   return user_data
+  // };
 };
 
 export default Authenticate;
