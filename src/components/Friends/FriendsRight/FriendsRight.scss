@@ -14,10 +14,14 @@
     
     .friendsright-each-img {
       display: inline-block;
-      border: 1px black solid;
+      // border: 1px black solid;
       border-radius: 100px;
       width: 90px;
       height: 90px;
+      margin-bottom: 10px;
+    }
+    .friendsright-each-img img{
+      border-radius: inherit;
     }
 
     .friendsright-name {

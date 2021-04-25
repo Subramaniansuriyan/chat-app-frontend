@@ -14,9 +14,16 @@
       height: 45px;
       width: 45px;
       border-radius: 100px;
-      border: 1px black solid;
+      // border: 1px black solid;
     }
 
+    .msgs-chatter-portrait img{
+      display: inline-block;
+      height: 45px;
+      width: 45px;
+      border-radius: 100px;
+      border: 1px black solid;
+    }
     .msgs-chatter-namecontent-wrapper {
       display: inline-block;
       margin-left: 8px;
@@ -71,7 +78,14 @@
       height: 45px;
       width: 45px;
       border-radius: 100px;
-      border: 1px black solid;
+      // border: 1px black solid;
+    }
+    .msgs-own-portrait img {
+      display: inline-block;
+      height: 45px;
+      width: 45px;
+      border-radius: 100px;
+      // border: 1px black solid;
     }
 
     .msgs-own-namecontent-wrapper {

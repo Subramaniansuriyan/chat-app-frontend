@@ -149,12 +149,12 @@ class Authenticate {
   //       THIS.setState({data: response});
   //     })
   // };
-  // static async find_users(ownid) {
-  //   console.log('front',ownid)
-  //   let user_data = await axios
-  //     .get(`http://localhost:5000/auth/${ownid}`)
-  //   return user_data
-  // };
+  static async find_users(ownid) {
+    console.log('front',ownid)
+    let user_data = await axios
+      .get(`http://localhost:5000/auth/username/${ownid}`)
+    return user_data
+  };
 };
 
 export default Authenticate;

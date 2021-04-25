@@ -148,24 +148,24 @@ class FriendsLeft extends React.Component {
                         {user.username ? (
                           <p>
                             {user.username}(
-                            {user.useremail.length > 27
+                            {user.useremail?.length > 27
                               ? user.useremail.substring(10) +
                               "..." +
                               user.useremail.substring(
-                                user.useremail.length - 12,
-                                user.useremail.length
+                                user.useremail?.length - 12,
+                                user.useremail?.length
                               )
                               : user.useremail}
                             )
                           </p>
                         ) : (
                             <p>
-                              {user.useremail.length > 27
+                              {user.useremail?.length > 27
                                 ? user.useremail.substring(0, 10) +
                                 "..." +
                                 user.useremail.substring(
-                                  user.useremail.length - 12,
-                                  user.useremail.length
+                                  user.useremail?.length - 12,
+                                  user.useremail?.length
                                 )
                                 : user.useremail}
                             </p>

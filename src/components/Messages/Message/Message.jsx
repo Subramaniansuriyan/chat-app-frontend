@@ -60,6 +60,7 @@ class Message extends React.Component {
         <div className="Messages-inboxes">
           <div className="Messages-inboxes-backgroundhover">
             <div className="Messages-inboxes-pics">
+              <img src={`http://localhost:5000/Images/${this.props.chat.imgurl}`}/>
             </div>
 
             <div className="Messages-inboxes-middle">

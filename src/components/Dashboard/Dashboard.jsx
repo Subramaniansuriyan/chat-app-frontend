@@ -10,35 +10,36 @@ class Dashboard extends React.Component {
     super(props);
 
     this.state = {
-    //  userdata:'',
-    //  userid: this.props.location.pathname.split("/")[2]
+     userdata:'',
+     userid: this.props.location.pathname.split("/")[2]
     };
   };
-  // componentDidMount() {
+  componentDidMount() {
 
-  //   let userid = this.props.location.pathname.split("/")[2];
-  //   console.log(userid)
-  //   Authenticate.find_users(userid)
-  //   .then((response) => {
-  //     console.log(response.data.user[0])
-  //     this.setState({
-  //       userdata: response.data.user[0]
-  //     })
-  //   })
-  // }
+    let userid = this.props.location.pathname.split("/")[2];
+    console.log(userid)
+    Authenticate.find_users(userid)
+    .then((response) => {
+      console.log(response.data.user[0])
+      this.setState({
+        userdata: response.data.user[0]
+      })
+    })
+  }
 
   render() {
     return (
       <div className="Dashboard">
 
         <div className="dashboard-img-div-wrapper">
-          <div className="dashboard-img-div">
+          <div className="dashboard-img-div" key={this.state.userdata.imgurl}>
+            <img src={`http://localhost:5000/Images/${this.state.userdata.imgurl}`}/>
           </div>
           <p>
-            {/* User Name: {this.state.userdata.username} */}
+            User Name: {this.state.userdata.username}
           </p>
           <p>
-            {/* Email: {this.state.userdata.useremail} */}
+            Email: {this.state.userdata.useremail}
           </p>
         </div>
       </div>
